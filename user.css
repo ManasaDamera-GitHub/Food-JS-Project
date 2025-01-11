@@ -1,0 +1,146 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling with Moving Gradient Background (Light Colors) */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f9f9f9, #ffe4e1, #d4eaff, #e3ffe7);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+    /* Infinite animation */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Gradient Animation */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Container Styling */
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.2);
+    /* Glass effect */
+    backdrop-filter: blur(10px);
+    /* Frosted glass blur */
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Food Item Styling */
+#container>div {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* Hover effect on food item */
+#container>div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Food Name Styling */
+#container p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #301B3F;
+    font-family: monospace;
+    transition: color 0.3s ease;
+
+}
+
+/* Hover effect on food name */
+#container p:first-child:hover {
+    color: #ff6363;
+}
+
+/* Food Image Styling */
+#container img {
+    width: 100%;
+    /* Ensures the image takes up full width of its container */
+    height: 200px;
+    /* Sets a consistent height for all images */
+    object-fit: cover;
+    /* Ensures the image covers the area without distortion */
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover effect on image */
+#container img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Caption Styling */
+#container p:nth-child(3) {
+    font-size: 16px;
+    color: #640D5F;
+    margin-top: 10px;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+/* Price Styling */
+#container p:nth-child(4) {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: #640D5F;
+    font-family: cursive;
+    transition: color 0.3s ease;
+
+}
+
+/* Hover effect on price */
+#container p:nth-child(4):hover {
+    color: #ff6363;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Container Hover Effect */
+#container:hover {
+    opacity: 0.95;
+    transform: scale(1.02);
+}

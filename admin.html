@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- <div class="loader">Loading...</div> -->
+    <div class="container">
+        <input type="hidden" id="id">
+        <input type="text" placeholder="Enter name" id="name"><br>
+        <div class="error-message" id="nameError"></div>
+        <input type="text" placeholder="Image url" id="image"><br>
+        <div class="error-message" id="imageError"></div>
+        <input type="text" placeholder="Caption" id="caption"><br>
+        <div class="caption-message" id="captionError"></div>
+        <input type="text" placeholder="price" id="price" required><br>
+        <button onclick="saveData()">Save Data</button>
+    </div>
+    <table id="grid-container">
+        <table class="data-table" id="grid-container">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>Caption</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </table>
+    <script src="./admin.js"></script>
+</body>
+
+</html>
