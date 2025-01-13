@@ -1,6 +1,6 @@
 async function displayData() {
     try {
-        let response = await fetch("https://copper-childish-powder.glitch.me/db.json")
+        let response = await fetch("https://aboard-lizard-magnesium.glitch.me/food")
         if (!response.ok) {
             throw new Error(response.statusText, "Failed to fetch the data")
         }
