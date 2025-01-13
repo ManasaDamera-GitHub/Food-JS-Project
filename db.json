@@ -1,0 +1,60 @@
+{
+  "food": [
+    {
+      "id": "1",
+      "name": "Chicken-Biryani",
+      "image": "https://sapanarestaurant.com/wp-content/uploads/2019/11/authentic-chicken-biryani.jpg",
+      "price": "250",
+      "caption": "A day with chicken biryani is a day well spent."
+    },
+    {
+      "name": "Veg-Biryani",
+      "image": "https://www.indiagatebkk.com/upload/Veg-Biryani-1580561822.jpg",
+      "caption": "Add some spice to your life with veg biryani.",
+      "price": "200",
+      "id": "2"
+    },
+    {
+      "name": "Butter Chicken & Naan",
+      "image": "https://i.imgur.com/CDZQe7d.jpeg",
+      "caption": " When in doubt, add naan - it's always a good idea.",
+      "price": "450",
+      "id": "3"
+    },
+    {
+      "name": "Mutton-Biryani",
+      "image": "https://spiceeats.com/wp-content/uploads/2020/07/Mutton-Biryani.jpg",
+      "caption": "Life is short, eat more Biryani.",
+      "price": "620",
+      "id": "4"
+    },
+    {
+      "id": "5",
+      "name": "Noodles",
+      "image": "https://lindseyeatsla.com/wp-content/uploads/2021/11/LindseyEats_Spicy_Garlic_Noodles-3.jpg",
+      "price": "150",
+      "caption": "When life gives you noodles, slurp them up with joy! 😋🍜"
+    },
+    {
+      "id": "6",
+      "name": "Burger",
+      "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps28800_UG143377D12_18_1b_RMS.jpg",
+      "caption": "You're bun in a million.",
+      "price": "150"
+    },
+    {
+      "id": "f566",
+      "name": "Pizza",
+      "image": "https://4.bp.blogspot.com/-n-jZjyEzncE/Uq8IxN6-giI/AAAAAAAADWk/OL-YhSPEG_4/s1600/Pizza+Food+Hd+Wallpaper.jpg",
+      "caption": "Pizza is the only love triangle I want.",
+      "price": "120"
+    },
+    {
+      "id": "fe03",
+      "name": "Fish Fry",
+      "image": "https://1.bp.blogspot.com/-dmr7TvaMJ7c/WRyLh1RZjlI/AAAAAAAAIF4/uPHo3WFtctE8ZS34-s0mkRyNRkU-2-SzgCLcB/s1600/0000000000000000000000A%2B%25281%2529.jpg",
+      "caption": "Seafood love.",
+      "price": "600"
+    }
+  ]
+}
