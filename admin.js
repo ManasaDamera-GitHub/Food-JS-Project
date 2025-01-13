@@ -1,7 +1,7 @@
 
 async function getData() {
     console.log("please wait .......")
-    let response = await fetch("https://repeated-delightful-glass.glitch.me/FOOD%20JSON%20DATA/db.json")
+    let response = await fetch("https://copper-childish-powder.glitch.me/db.json")
     // console.log(response)
     try {
         if (!response.ok) {
@@ -104,7 +104,7 @@ function displayData(food) {
 
 async function deleteItem(id) {
     try {
-        let response = await fetch(`https://repeated-delightful-glass.glitch.me/FOOD%20JSON%20DATA/db.json/${id}`, { method: "DELETE" })
+        let response = await fetch(`https://copper-childish-powder.glitch.me/db.json/${id}`, { method: "DELETE" })
         if (!response.ok) {
             throw new Error(response.statusText)
         }
@@ -153,7 +153,7 @@ async function saveData() {
     }
 
     let FoodMethod = foodId ? "PUT" : "POST";
-    let URL = foodId ? `https://repeated-delightful-glass.glitch.me/FOOD%20JSON%20DATA/db.json/${foodId}` : `https://repeated-delightful-glass.glitch.me/FOOD%20JSON%20DATA/db.json`;
+    let URL = foodId ? `https://copper-childish-powder.glitch.me/db.json/${foodId}` : `https://copper-childish-powder.glitch.me/db.json`;
 
     let response = await fetch(URL, {
         "method": FoodMethod,
